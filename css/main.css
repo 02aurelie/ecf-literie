@@ -2,15 +2,26 @@ body {
     background-color: rgba(223, 223, 33, 0.712);
 }
 
+.container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .container img {
     margin-left: 31rem;
+}
+
+.right-wrapper li {
+    color: rgb(32, 32, 133);
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 h1 {
     font-size: 5rem;
     text-align: center;
     color: rgb(32, 32, 133);
-    text-decoration: underline;
 }
 
 .bed img {
@@ -69,3 +80,4 @@ h1 {
 .others-marks {
     text-transform: none;
 }
+

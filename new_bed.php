@@ -1,31 +1,3 @@
-<?php
-if (!empty($_POST)) {
-    $errors = [];
-
-    $image =trim(strip_tags($_POST["image"]));
-    $name = trim(strip_tags($_POST["name"]));
-    $marque = trim(strip_tags($_POST["marque"]));
-    $taille = trim(strip_tags($_POST["taille"]));
-    $prix = trim(strip_tags($_POST["prix"]));
-
-    if (empty($errors)) {
-
-        $db = new PDO("mysql:host=localhost;dbname=literie3000", "root", "");
-       
-        $query = $db->prepare("INSERT INTO users (image, marque, name, taille, prix) VALUES (: image, :marque, :name, :taille, :prix)");
-
-        $query->bindParam(":image", $image);
-        $query->bindParam(":marque", $marque);
-        $query->bindParam(":name", $name);
-        $query->bindParam(":taille", $taille);
-        $query->bindParam(":prix", $prix);
-
-        if ($query->execute()) {
-            header("Location: index.php");
-        }
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -34,11 +6,11 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Création de la fiche produit d'un matelas</title>
+    <title>Nouvelles informations du matelas</title>
 </head>
 
 <body>
-    <h2>Création de la fiche produit d'un matelas</h2>
+    <h2>Création de la nouvelle fiche produit du matelas</h2>
 
     <form action="" method="POST">
     <div class="form-group">

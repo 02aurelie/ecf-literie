@@ -10,12 +10,7 @@ include("templates/header.php");
 ?>
 
 <h1>Notre catalogue</h1>
-<nav>
-    <ul>
-        <li><a href="create_bed.php">Création d'un matelas</a></li>
 
-    </ul>
-</nav>
 <div class="beds">
     <?php
     foreach ($beds as $bed) {
@@ -37,7 +32,7 @@ include("templates/header.php");
 </div>
 <div class="bottom">
 
-    <a href="bed.php?id=<?= $bed["id"] ?>"> Retrouvez la suite du catalogue en page 2</a>
+    <a href="bed.php?2=<?= $bed["id"] ?>"> Retrouvez la suite du catalogue en page 2</a>
 
     <div class="dimensions">
         <p>Vous y découvrirez toutes nos dimensions :</p>
