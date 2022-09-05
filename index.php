@@ -29,6 +29,24 @@ include("templates/header.php");
     ?>
 
 </div>
+<div class="bottom">
+    <p>La suite de notre catalogue en page 2 </p>
+
+    <div class="dimensions">
+        <p>Vous y découvrirez toutes nos dimensions :</p>
+    </div>
+    <div class="others-dimensions">
+        <p>90x190, 140x190, 160x200, 180x200, 200x200</p>
+
+    </div>
+
+    <div class="marks">
+        <p>Et toutes nos marques de matelas :</p>
+        <div class="others-marks">
+            <p> Epeda, Dreamway, Bultex, Dorsoline, MemoryLine</p>
+        </div>
+    </div>
+</div>
 
 <?php
 include("templates/footer.php");
