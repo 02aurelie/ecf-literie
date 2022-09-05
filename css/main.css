@@ -22,6 +22,7 @@ h1 {
     font-size: 5rem;
     text-align: center;
     color: rgb(32, 32, 133);
+    text-decoration: underline;
 }
 
 .bed img {

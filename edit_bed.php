@@ -15,30 +15,15 @@
 <body>
     <h3>Modification d'un matelas</h3>
 
-    <!-- <form action="" method="POST">
+    
     <div class="form-group">
-            <label for="inputMarque">Image du matelas:</label>
-            <input type="" id="inputMarque" name="Image" value="<?= isset($image) ? $image : "" ?>">
-        </div> -->
-    <!-- <div class="form-group">
-            <label for="inputMarque">Marque du matelas:</label>
-            <input type="text" id="inputMarque" name="Marque" value="<?= isset($marque) ? $marque : "" ?>">
-        </div> -->
-        <div class="form-group">
-            <label for="inputName">Nom du matelas:</label>
-            <input type="text" id="inputName" name="Name" value="<?= isset($name) ? $name : "" ?>">
-        <!-- </div>
-        <div class="form-group">
-            <label for="inputTaille">Taille :</label>
-            <input type="text" id="inputTaille" name="Taille" value="<?= isset($taille) ? $taille : "" ?>">
-        </div>
-        <div class="form-group">
-            <label for="inputPrix">Prix :</label>
-            <input type="" name="Prix" id="inputPrix" value="<?= isset($prix) ? $prix : "" ?>">
-        </div> -->
-
-        <input type="submit" value="Modification du matelas">
-    </form>
+        <label for="inputName">Nom du matelas:</label>
+        <input type="text" id="inputName" name="Name" value="<?= isset($name) ? $name : "" ?>">
+       
+        <nav>
+            <a href="http://localhost/ecf-back-literie/ecf-literie/new_bed.php"><input type="submit" value="Modification du matelas"></a>
+        </nav>
+        </form>
 </body>
 
 </html>

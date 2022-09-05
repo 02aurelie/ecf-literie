@@ -1,3 +1,34 @@
+<?php
+if (!empty($_POST)) {
+    
+    $errors = [];
+
+    $image =trim(strip_tags($_POST["image"]));
+    $name = trim(strip_tags($_POST["name"]));
+    $marque = trim(strip_tags($_POST["marque"]));
+    $taille = trim(strip_tags($_POST["taille"]));
+    $prix = trim(strip_tags($_POST["prix"]));
+
+    if (empty($errors)) {
+
+        $db = new PDO("mysql:host=localhost;dbname=literie3000", "root", "");
+       
+        $query = $db->prepare("INSERT INTO users (image, marque, name, taille, prix) VALUES (: image, :marque, :name, :taille, :prix)");
+
+        $query->bindParam(":image", $image);
+        $query->bindParam(":marque", $marque);
+        $query->bindParam(":name", $name);
+        $query->bindParam(":taille", $taille);
+        $query->bindParam(":prix", $prix);
+
+        if ($query->execute()) {
+            header("Location: index.php");
+        }
+    }
+
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
