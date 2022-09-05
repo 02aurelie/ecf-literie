@@ -10,13 +10,20 @@ h1 {
     font-size: 5rem;
     text-align: center;
     color: rgb(32, 32, 133);
+    text-decoration: underline;
 }
 
 .bed img {
     margin-top: 2.5rem;
     margin-left: 25rem;
     width: 700px;
-    
+}
+
+@media screen and (max-width: 576px) {
+    .bed img {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .bed-details {
@@ -32,6 +39,13 @@ h1 {
     margin-right: 5rem;
 }
 
+@media screen and (max-width: 576px) {
+    .bed-details {   
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .bottom {
     color: rgb(32, 32, 133);
     text-align: center;
@@ -41,7 +55,7 @@ h1 {
 }
 
 .dimensions {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
 .others-dimensions {
@@ -49,7 +63,7 @@ h1 {
 }
 
 .marks {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
 .others-marks {

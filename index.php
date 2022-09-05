@@ -30,8 +30,9 @@ include("templates/header.php");
 
 </div>
 <div class="bottom">
-    <p>La suite de notre catalogue en page 2 </p>
-
+   
+    <a href="bed.php?id=<?= $bed["id"] ?>"> Retrouvez la suite du catalogue en page 2</a>
+    
     <div class="dimensions">
         <p>Vous y découvrirez toutes nos dimensions :</p>
     </div>
